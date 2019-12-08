@@ -1,0 +1,227 @@
+libhinawa (2.0.0) unstable; urgency=medium
+
+  * New upstream release.
+
+ -- Takashi Sakamoto <o-takashi@sakamocchi.jp>  Fri, 29 May 2020 13:19:07 +0900
+
+libhinawa (1.4.5-1) unstable; urgency=medium
+
+  * New upstream version 1.4.5
+  * d/control
+    - Bump standard-version to 4.5.0. No changes are required.
+    - Bump debhelper version to 13.
+
+ -- Kentaro Hayashi <kenhys@xdump.org>  Mon, 11 May 2020 21:26:28 +0900
+
+libhinawa (1.4.4-1) unstable; urgency=medium
+
+  * New upstream version 1.4.4
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Wed, 22 Jan 2020 20:47:01 +0900
+
+libhinawa (1.4.3-1) unstable; urgency=medium
+
+  * New upstream version 1.4.3
+  * debian/control
+    - Fix description for gir1.2-hinawa-2.0
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Fri, 17 Jan 2020 18:22:38 +0900
+
+libhinawa (1.4.0-1) unstable; urgency=medium
+
+  [ Takashi Sakamoto ]
+  * debian/libhinawa1.symbols
+    - Add v1.4.0 symbols.
+  * debian/control
+    - Bump required meson version.
+
+  [ Kentaro Hayashi ]
+  * debian/control
+    - Bump standard version to 4.4.1
+    - Bump compatibility level to 12.
+    - Apply Rules-Requires-Root: no
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Wed, 16 Oct 2019 23:15:23 +0900
+
+libhinawa (1.3.1-1) unstable; urgency=medium
+
+  * New upstream version 1.3.1
+  * libhinawa1.symbols
+    - Add v1.3.1 symbol. Patch via salsa.d.o/debian/libhinawa/issues/6.
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Fri, 31 May 2019 21:05:16 +0900
+
+libhinawa (1.2.0-1) unstable; urgency=medium
+
+  * New upstream version 1.2.0
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Mon, 25 Mar 2019 13:25:55 +0900
+
+libhinawa (1.1.2-1) unstable; urgency=medium
+
+  [ Salsa Pipeline ]
+  * Update salsa CI pipeline
+
+  [ Kentaro Hayashi ]
+  * New upstream version 1.1.2
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Tue, 05 Mar 2019 22:43:52 +0900
+
+libhinawa (1.1.1-1) unstable; urgency=medium
+
+  * New upstream version 1.1.1
+  * debian/libhinawa1.symbols
+    - Add v1.1.1 symbol. Patch by salsa.d.o/debian/libhinawa/issues/3.
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Mon, 25 Feb 2019 23:35:13 +0900
+
+libhinawa (1.1.0-1) unstable; urgency=medium
+
+  * New upstream version 1.1.0
+  * debian/libhinawa1.symbols
+    - Add v1.1.0 symbols. Patch by salsa.d.o/debian/libhinawa/issues/2.
+  * debian/control
+    - Bump standard version to 4.3.0. No other changes are required.
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Sun, 30 Dec 2018 22:09:50 +0900
+
+libhinawa (1.0.1-2) unstable; urgency=medium
+
+  * debian/.gitlab-ci.yml
+    - Add salsa CI
+  * debian/control
+    - Update Maintainer field.
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Thu, 13 Dec 2018 22:18:46 +0900
+
+libhinawa (1.0.1-1) unstable; urgency=medium
+
+  * New upstream release 1.0.1. (Closes: #908219)
+  * debian/control
+    - Bump standard version to 4.2.1. No other changes are required.
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Sun, 09 Sep 2018 23:08:47 +0900
+
+libhinawa (1.0.0-1) unstable; urgency=medium
+
+  * New upstream release 1.0.0.
+  * debian/control
+    - Bump libhinawa0 to libhinawa1.
+  * debian/rules
+    - Switch to Meson build system.
+  * debian/watch
+    - Use more flexible regex for the extension.
+  * debian/libhinawa1.symbols
+    - Add v1.0.0 symbols.
+  * debian/libhinawa0.symbols
+    - Drop obsolete symbols.
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Wed, 18 Jul 2018 00:37:39 +0900
+
+libhinawa (0.9.0-1) unstable; urgency=medium
+
+  * New upstream release 0.9.0.
+  * debian/control
+    - Bump standard version to 4.1.4. No other changes are required.
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Wed, 11 Apr 2018 21:22:17 +0900
+
+libhinawa (0.8.2-2) unstable; urgency=medium
+
+  * debian/compat
+    - Bump compatibility level to 11.
+  * debian/control
+    - Bump debhelper version to 11.
+    - Bump standard version to 4.1.3. No other changes are required.
+  * debian/copyright
+    - Fix insecure protocol for the URI.
+    - Bump upstream copyright and add debian/* entry.
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Mon, 26 Feb 2018 22:21:33 +0900
+
+libhinawa (0.8.2-1) unstable; urgency=medium
+
+  [ Takashi Sakamoto ]
+  * New upstream release 0.8.2.
+  * Upload to unstable.
+  * debian/compat
+    - bump version to 10.
+  * debian/control
+    - bump Standards-Version to 4.1.0.
+    - remove needless Build-Depends since compat level 10.
+    - fix missing dependency to .gir package.
+  * debian/gir1.2-hinawa-1.0.install
+    - install .typelib into multiarch directory.
+  * debian/rules
+    - remove needless --with autotools-dev since compat level 10.
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Fri, 22 Sep 2017 22:27:10 +0900
+
+libhinawa (0.8.1-1) experimental; urgency=medium
+
+  [ Takashi Sakamoto ]
+  * New upstream release 0.8.1.
+  * debian/libhinawa0.symbols
+    - Below two symbols are newly introduced.
+     - hinawa_snd_motu_get_type
+     - hinawa_snd_motu_open
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Wed, 10 May 2017 17:13:58 +0900
+
+libhinawa (0.7.0-2) unstable; urgency=medium
+
+  * debian/control
+    - set Architecture: linux-any for all package to avoid build with non-linux
+      arch (Closes: #823011).
+    - bump standars-version to 3.9.8.
+    - add 'Uploaders' field.
+  * debian/watch
+    - support cryptographic signature verification.
+
+ -- Kentaro Hayashi <hayashi@clear-code.com>  Sat, 14 May 2016 22:23:32 +0900
+
+libhinawa (0.7.0-1) unstable; urgency=medium
+
+  * New upstream release 0.7.0
+  * debian/control
+    - requires to debhelper 9 or later.
+    - update to the latest standards-version.
+  * debian/source/format
+    - add missing source/format.
+  * debian/copyright
+    - specify License: field correctly.
+    - add missing License: paragraph.
+    - note that backport.h comes from Linux UAPI header.
+  * debian/rules
+    - simplify rules by using dh_* efficiently..
+  * debian/watch
+    - add missing watch file.
+  * debian/libhinawa0.symbols
+    - add missing symbol file.
+
+ -- HAYASHI Kentaro <hayashi@clear-code.com>  Mon, 01 Feb 2016 21:55:37 +0900
+
+libhinawa (0.6.0-1) unstable; urgency=medium
+
+  * New upstream release 0.6.0
+   * Use blocking I/O to save CPU usage
+   * Purge alsa-lib dependency
+   * Add 'disconnect' gobject signal
+   * Add 'listening' property
+   * Debian packaging (Thanks to Yoshihiro Okada)
+   * Add spec file (Thanks to Yoshihiro Okada)
+
+ -- Takashi Sakamoto <o-takashi@sakamocchi.jp>  Sun, 29 Mar 2015 11:38:43 +0900
+
+libhinawa (0.5.0-2) unstable; urgency=low
+
+  * Separate gir typelib to a new package.
+  * fix minor issues.
+
+ -- Takashi Sakamoto <o-takashi@sakamocchi.jp>  Mon, 16 Mar 2015 15:29:30 +0900
+
+libhinawa (0.5.0-1) unstable; urgency=low
+
+  * add package management files for ubuntu.
+
+ -- Yoshihiro Okada <yoshihiro.okada@nifty.ne.jp>  Tue, 10 Mar 2015 16:45:32 +0900

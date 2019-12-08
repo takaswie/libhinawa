@@ -1,0 +1,59 @@
+Source: libhinawa
+Section: libs
+Priority: optional
+Maintainer: Kentaro Hayashi <kenhys@xdump.org>
+Build-Depends: debhelper-compat (= 13),
+    meson (>= 0.46.0),
+    libglib2.0-dev (>= 2.32.0),
+    gtk-doc-tools (>= 1.18-2),
+    gobject-introspection (>= 1.32.1),
+    libgirepository1.0-dev (>= 1.32.1),
+    python3-gi
+Rules-Requires-Root: no
+Standards-Version: 4.5.0
+Homepage: https://github.com/takaswie/libhinawa
+Vcs-Browser: https://salsa.debian.org/debian/libhinawa/
+Vcs-Git: https://salsa.debian.org/debian/libhinawa.git
+
+Package: libhinawa2
+Architecture: linux-any
+Pre-Depends: ${misc:Pre-Depends}
+Depends: ${shlibs:Depends}, ${misc:Depends},
+    libglib2.0-0 (>= 2.32.0)
+Breaks: libhinawa1 (<< 2.0.0-1)
+Replaces: libhinawa1 (<< 2.0.0-1)
+Multi-Arch: same
+Description: I/O library for IEEE 1394 asynchronous transactions
+ This is an I/O library for units on IEEE 1394 bus. This library
+ supports any types of asynchronous transactions over IEEE 1394 bus.
+ Additionally, this library also supports some functionalities which
+ ALSA firewire stack produces.
+
+Package: gir1.2-hinawa-3.0
+Section: introspection
+Architecture: linux-any
+Depends: ${misc:Depends}, ${gir:Depends},
+    libhinawa2 (= ${binary:Version}),
+Breaks: gir1.2-hinawa-2.0 (<< 2.0.0-1)
+Replaces: gir1.2-hinawa-2.0 (<< 2.0.0-1)
+Description: GObjet introspection data for libhinawa2
+ This package contains introspection data for libhinawa2. It can be
+ used by packages using the GIRepository format to generate dynamic
+ bindings, or it can be used by interpreters understanding the
+ GIReporsitory format to libhinawa2.
+
+Package: libhinawa-dev
+Section: libdevel
+Architecture: linux-any
+Depends: ${misc:Depends},
+    libhinawa2 (= ${binary:Version}),
+    libglib2.0-dev (>= 2.32.0),
+    libgirepository1.0-dev (>= 1.32.1),
+    gir1.2-hinawa-3.0 (= ${binary:Version})
+Description: I/O library for IEEE 1394 asynchronous transactions (development file)
+ Libhinawa is an I/O library for units on IEEE 1394 bus. This library
+ supports any types of asynchronous transactions over IEEE 1394 bus.
+ Additionally, this library also supports some functionalities which
+ ALSA firewire stack produces.
+ This package contains development files including C headers and
+ XML data for GIRepository.

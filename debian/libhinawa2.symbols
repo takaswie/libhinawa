@@ -8,6 +8,7 @@ libhinawa.so.2 libhinawa2 #MINVER#
  HINAWA_1_4_0@HINAWA_1_4_0 1.4.0
  HINAWA_2_0_0@HINAWA_2_0_0 2.0.0
  HINAWA_2_1_0@HINAWA_2_1_0 2.1.0
+ HINAWA_2_2_0@HINAWA_2_2_0 2.2.0
  hinawa_fw_node_get_type@HINAWA_1_4_0 1.4.0
  hinawa_fw_node_new@HINAWA_1_4_0 1.4.0
  hinawa_fw_node_open@HINAWA_1_4_0 1.4.0
@@ -74,3 +75,5 @@ libhinawa.so.2 libhinawa2 #MINVER#
  hinawa_snd_efw_transaction_sync@HINAWA_2_1_0 2.1.0
  hinawa_fw_fcp_command@HINAWA_2_1_0 2.1.0
  hinawa_fw_fcp_avc_transaction@HINAWA_2_1_0 2.1.0
+ hinawa_fw_resp_error_get_type@HINAWA_2_2_0 2.2.0
+ hinawa_fw_resp_error_quark@HINAWA_2_2_0 2.2.0
